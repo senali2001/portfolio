@@ -1,107 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navodhya Senali</title>
-     <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"/>
-      <!-- Boxicons CDN -->
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navodhya Senali</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <!-- Boxicons CDN -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 </head>
+
 <body class="bg-black">
-    <!--Navbar Start-->
-<nav class="bg-black shadow p-4 flex items-center justify-between">
+  <!--Navbar Start-->
+  <nav class="bg-black shadow p-4 flex items-center justify-between fixed top-0 left-0 w-full z-50">
     <!-- Logo -->
-    <div class="text-white text-2xl font-bold tracking-wide" >
-        SENALI R.B.N
+    <div class="text-white text-2xl font-bold tracking-wide">
+      SENALI R.B.N
     </div>
-        
-        <!-- menu list -->
-        <ul class="flex space-x-12 text-sm font-medium">
-            <li><a href="#home" class="text-white hover:text-blue-800 transition duration-200" class="active">Home</a></li>
-            <li><a href="#about" class="text-white hover:text-blue-800 transition duration-200" onclick="" >About</a></li>
-            <li><a href="#education" class="text-white hover:text-blue-800 transition duration-200" >Education</a></li>
-             <li><a href="#Projects" class="text-white hover:text-blue-800 transition duration-200">Projects</a></li>
 
-            <li><a href="#contact" class="text-white hover:text-blue-800 transition duration-200">Contact</a></li>
-       </ul>
-       </nav>
-    <!--Navbar end-->
-   
-   
+    <!-- menu list -->
+    <ul class="flex space-x-12 text-sm font-medium">
+      <li><a href="#home" class="text-white hover:text-blue-500 transition duration-200" class="active">Home</a></li>
+      <li><a href="#about" class="text-white hover:text-blue-500 transition duration-200" onclick="">About</a></li>
+      <li><a href="#education" class="text-white hover:text-blue-500 transition duration-200">Education</a></li>
+      <li><a href="#Projects" class="text-white hover:text-blue-500 transition duration-200">Projects</a></li>
 
-    <!--Hero section start-->
-    <section class="bg-black min-h-screen flex items-center px-2 md:px-6">
+      <li><a href="#contact" class="text-white hover:text-blue-500 transition duration-200">Contact</a></li>
+    </ul>
+  </nav>
+  <!--Navbar end-->
+
+
+
+  <!--Home section start-->
+  <section class="bg-black min-h-screen flex items-center px-2 md:px-6">
+    <div class="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+     
+      <div class="text-left pl-2 md:pl-4">
+        <h3 class="text-white text-lg mb-2">Hello, it's me</h3>
+        <h1 class="text-white text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+          Navodhya Senali
+        </h1>
+
+        <h3 class="text-xl md:text-2xl font-semibold text-blue-400 mb-6">
+          I'm a <span id="typing-text" class="text-blue-300 font-bold"></span>
+        </h3>
+
+        <p class="text-gray-300 text-base md:text-lg leading-relaxed max-w-xl">
+          Hey there! I'm a curious and passionate learner who loves exploring new technologies.
+          I'm always eager to grow, adapt, and stay updated with the latest trends in the ever-evolving tech world.
+        </p>
+
+        <div class="flex gap-4 mt-6">
+          <a href="mailto:navodhyasenali@gmail.com"
+            class="border-2 border-blue-500 rounded-full w-10 h-10 flex items-center justify-center text-blue-500 hover:bg-blue-100 transition">
+            <i class='bx bx-envelope text-xl'></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/navodhya-senali-85a40b332/"
+            class="border-2 border-blue-500 rounded-full w-10 h-10 flex items-center justify-center text-blue-500 hover:bg-blue-100 transition">
+            <i class='bx bxl-linkedin text-xl'></i>
+          </a>
+          <a href="https://github.com/senali2001/"
+            class="border-2 border-blue-500 rounded-full w-10 h-10 flex items-center justify-center text-blue-500 hover:bg-blue-100 transition">
+            <i class='bx bxl-github text-xl'></i>
+          </a>
+        </div>
+
+        <a href="https://docs.google.com/document/d/1Pm4_r1OwYfJzrGDsWv1KG35gXHGW-rA4zz7eQ_xKdP0/edit?usp=drive_link"
+          class="inline-block mt-6 bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition">
+          Download CV
+        </a>
+      </div>
+
+      <div class="hidden md:flex justify-center items-center" data-aos="fade-up" data-aos-duration="1500">
+        <img src="images/senali.PNG" alt="Profile"
+          class="w-96 h-96 md:w-[450px] md:h-[450px] object-cover rounded-full shadow-lg">
+      </div>
+
+
+    </div>
+  </section>
+
+  <!--Home section end-->
+
+  <!--about section start-->
+
+<section class="about bg-gray-900 py-16 px-2 md:px-6" id="about">
   <div class="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
     
-    <!-- Left Column: About Me Text -->
-    <div class="text-left pl-2 md:pl-4">
-      <h3 class="text-white text-lg mb-2">Hello, it's me</h3>
-      <h1 class="text-white text-4xl md:text-6xl font-extrabold leading-tight mb-4">
-        Navodhya Senali
-      </h1>
-
-      <h3 class="text-xl md:text-2xl font-semibold text-blue-400 mb-6">
-        I'm a <span id="typing-text" class="text-blue-300 font-bold"></span>
-      </h3>
-
-      <p class="text-gray-300 text-base md:text-lg leading-relaxed max-w-xl">
-        Hey there! I'm a curious and passionate learner who loves exploring new technologies.
-        I'm always eager to grow, adapt, and stay updated with the latest trends in the ever-evolving tech world.
+    
+    <div class="about-img flex justify-center items-center" data-aos="fade-right" data-aos-duration="1500">
+      <img src="images/senali.PNG" alt="About Me" class="w-96 h-96 md:w-[450px] md:h-[450px] object-cover rounded-full shadow-lg">
+    </div>
+    
+    
+    <div class="about-content text-left" data-aos="fade-left" data-aos-duration="1500">
+      <h2 class="text-white text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+        About <span class="text-blue-400">Me</span>
+      </h2>
+      <h3 class="text-xl md:text-2xl font-semibold text-blue-400 mb-6">Aspiring Software Engineer</h3>
+      <p class="text-gray-300 text-base md:text-lg leading-relaxed mb-8 max-w-xl">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam eveniet molestiae voluptatibus inventore reprehenderit repellat excepturi eius ab impedit, consequuntur animi numquam, officia ducimus. Expedita blanditiis nam recusandae autem velit.
+        <br><br>
+        Tempore voluptas beatae ex quis? Qui, consequatur consectetur distinctio exercitationem sequi, cum officiis voluptates suscipit quae pariatur aliquam dolorem, eum maxime. Impedit ab est quo dolores animi repellendus mollitia corporis?
       </p>
+  </div>
+  </div>
+  </section>
+   <!--about section end-->
+   <!--education section start-->
 
-      <div class="flex gap-4 mt-6">
-  <a href="mailto:navodhyasenali@gmail.com" class="border-2 border-blue-500 rounded-full w-10 h-10 flex items-center justify-center text-blue-500 hover:bg-blue-100 transition">
-  <i class='bx bx-envelope text-xl'></i>
-</a>
+   <section class="education bg-black py-16 px-2 md:px-6" id="education">
 
-  <a href="https://www.linkedin.com/in/navodhya-senali-85a40b332/" class="border-2 border-blue-500 rounded-full w-10 h-10 flex items-center justify-center text-blue-500 hover:bg-blue-100 transition">
-    <i class='bx bxl-linkedin text-xl'></i>
-  </a>
-  <a href="https://github.com/senali2001/" class="border-2 border-blue-500 rounded-full w-10 h-10 flex items-center justify-center text-blue-500 hover:bg-blue-100 transition">
-    <i class='bx bxl-github text-xl'></i>
-  </a>
+    <div class="w-full max-w-7xl mx-auto">
+
+      <h2 class="text-white text-4xl md:text-6xl font-extrabold text-center leading-tight mb-16" data-aos="fade-up" data-aos-duration="1000">
+          My <span class="text-blue-400">Journey</span>
+      </h2>
+
+      <div class="education-row grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
+
+
+        <div class="education-column" data-aos="fade-right" data-aos-duration="1200">
+
+          <h3 class="text-white text-2xl md:text-3xl font-bold text-center mb-8 pb-4 border-b-2 border-blue-400">Education</h3>
+          <div clss="education-box">
+            <div class="year flex items-center text-blue-400 font-semibold mb-4 group-hover:text-blue-300">
+                <i class='bx bx-calendar mr-2 text-xl'></i>
+                <span>since 2023</span>
+              </div>
+
+            
+            <h3 class="text-white text-xl font-bold mb-4 group-hover:text-blue-300 transition-colors duration-300">Undergraduate - NSBM Green University</h3>
+            <p class="text-gray-300 leading-relaxed group-hover:text-white transition-colors duration-300">I am currently pursuing my BSc (Honors) in
+               Software Engineering at NSBM Green University. My academic journey centers on mastering full-stack development, cloud technologies, and 
+               testing tools, while strengthening my skills in database management and problem-solving. I have hands-on experience with Java, HTML, CSS,
+                JavaScript, PHP, Spring Boot, React, the MERN stack, and AWS, which I apply through real-world projects to build practical, scalable solutions.
+
+            </p>
+          </div>
+          <br>
+           <div clss="education-box">
+            <div class="year flex items-center text-blue-400 font-semibold mb-4 group-hover:text-blue-300">
+                <i class='bx bx-calendar mr-2 text-xl'></i>
+                <span>since 2022</span>
+              </div>
+
+            
+            <h3 class="text-white text-xl font-bold mb-4 group-hover:text-blue-300 transition-colors duration-300">Undergraduate - NSBM Green University</h3>
+            <p class="text-gray-300 leading-relaxed group-hover:text-white transition-colors duration-300">I completed my GCE Advanced Level examination in
+               the Physical Science stream at St. Mary's Convent, Matara, achieving the following results: B in Combined Mathematics, B in Chemistry,
+                and C in Physics.
+               
+
+            </p>
+          </div>
+
+          
+        </div>
+
+
 </div>
+      </div>
 
-      <a href="https://docs.google.com/document/d/1Pm4_r1OwYfJzrGDsWv1KG35gXHGW-rA4zz7eQ_xKdP0/edit?usp=drive_link" class="inline-block mt-6 bg-blue-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-700 transition">
-        Download CV
-      </a>
     </div>
 
-    <div class="hidden md:flex justify-center items-center" data-aos="fade-up" data-aos-duration="1500">
-  <img src="images/senali.PNG" alt="Profile"
-       class="w-96 h-96 md:w-[450px] md:h-[450px] object-cover rounded-full shadow-lg">
-</div>
+   </section>
 
+    
 
-  </div>
-</section>
+   <!--education section end-->
 
- <!--Hero section end-->
-
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script>
-  var typed = new Typed("#typing-text", {
-    strings: ["Frontend Developer", "Backend Developer", "Full-Stack Learner", "UI/UX Designer", "Tech Explorer"],
-    typeSpeed: 60,
-    backSpeed: 40,
-    loop: true,
-    showCursor: true,
-    cursorChar: "|"
-  });
-</script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed("#typing-text", {
+      strings: ["Frontend Developer", "Backend Developer", "Full-Stack Learner", "UI/UX Designer", "Tech Explorer"],
+      typeSpeed: 60,
+      backSpeed: 40,
+      loop: true,
+      showCursor: true,
+      cursorChar: "|"
+    });
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 
 </body>
+
 </html>
