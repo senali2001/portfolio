@@ -217,27 +217,31 @@
     <!-- Category Filters -->
     <div class="flex flex-wrap justify-center gap-4 mb-10">
       <button onclick="filterProjects('all')" class="filter-btn px-4 py-2 text-sm font-medium border border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white transition">All</button>
-      <button onclick="filterProjects('transport')" class="filter-btn px-4 py-2 text-sm font-medium border border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white transition">Transport</button>
+      <button onclick="filterProjects('retail')" class="filter-btn px-4 py-2 text-sm font-medium border border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white transition">Retail</button>
       <button onclick="filterProjects('medical')" class="filter-btn px-4 py-2 text-sm font-medium border border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white transition">Medical</button>
       <button onclick="filterProjects('tourism')" class="filter-btn px-4 py-2 text-sm font-medium border border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white transition">Tourism</button>
+      <button onclick="filterProjects('ai related')" class="filter-btn px-4 py-2 text-sm font-medium border border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white transition">AI Related</button>
       <button onclick="filterProjects('other')" class="filter-btn px-4 py-2 text-sm font-medium border border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white transition">Other</button>
+
     </div>
 
     <!-- Portfolio Grid -->
     <div id="projectGrid" class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-      <!-- Transport Project -->
-      <div class="project-card" data-category="transport">
+      <!-- ERP retail Project -->
+      <div class="project-card" data-category="retail">
         <div class="relative group rounded overflow-hidden shadow-lg">
-          <img src="assets/img/portfolio/portfolio-1.jpg" alt="Transport App" class="w-full h-64 object-cover">
+          <img src="images/ERP Retail.jpg" alt="erp Application" class="w-full h-64 object-cover">
           <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-center transition">
-            <i class="bx bx-link text-blue-500 text-3xl mb-2"></i>
-            <p class="text-sm text-gray-200 px-4">A smart transport system for city navigation</p>
+            <a href="https://github.com/senali2001/ERP-System" target="_blank">
+              <i class="bx bx-link text-blue-500 text-3xl mb-2"></i>
+            </a>
+            <p class="text-sm text-gray-200 px-4">ERP for Retail Bussiness</p>
           </div>
         </div>
       </div>
 
       <!-- Medical Project -->
-      <div class="project-card" data-category="medical">
+      <!--<div class="project-card" data-category="medical">
         <div class="relative group rounded overflow-hidden shadow-lg">
           <img src="assets/img/portfolio/portfolio-2.jpg" alt="Medical System" class="w-full h-64 object-cover">
           <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-center transition">
@@ -245,32 +249,37 @@
             <p class="text-sm text-gray-200 px-4">Hospital management system with e-prescription</p>
           </div>
         </div>
-      </div>
+      </div>-->
 
       <!-- Tourism Project -->
       <div class="project-card" data-category="tourism">
         <div class="relative group rounded overflow-hidden shadow-lg">
-          <img src="assets/img/portfolio/portfolio-3.jpg" alt="Tourism App" class="w-full h-64 object-cover">
+          <img src="images/tourism.jpg" alt="Tourism App" class="w-full h-64 object-cover">
           <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-center transition">
-            <i class="bx bx-link text-blue-500 text-3xl mb-2"></i>
-            <p class="text-sm text-gray-200 px-4">Tour guide app with real-time booking and maps</p>
+            <a href="https://github.com/Sithila26/Travel-Website" target="_blank">
+              <i class="bx bx-link text-blue-500 text-3xl mb-2"></i>
+            </a>
+            <p class="text-sm text-gray-200 px-4">Tourims application for travel planning</p>
           </div>
         </div>
       </div>
 
-      <!-- Other Project -->
-      <div class="project-card" data-category="other">
+      <!-- AI related -->
+      <div class="project-card" data-category="ai related">
         <div class="relative group rounded overflow-hidden shadow-lg">
-          <img src="assets/img/portfolio/portfolio-4.jpg" alt="Other Project" class="w-full h-64 object-cover">
+          <img src="images/chatbot.avif" alt="Other Project" class="w-full h-64 object-cover">
           <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-center transition">
+          <a href="https://github.com/senali2001/Basic-Chatbot" target="_blank">
             <i class="bx bx-link text-blue-500 text-3xl mb-2"></i>
-            <p class="text-sm text-gray-200 px-4">AI chatbot integrated into customer service portal</p>
+          </a>
+            <p class="text-sm text-gray-200 px-4">Simple AI chatbot</p>
           </div>
         </div>
       </div>
 
       <!-- Transport Project -->
-      <div class="project-card" data-category="transport">
+
+      <!-- <div class="project-card" data-category="transport">
         <div class="relative group rounded overflow-hidden shadow-lg">
           <img src="assets/img/portfolio/portfolio-5.jpg" alt="Transport Project" class="w-full h-64 object-cover">
           <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-center transition">
@@ -278,21 +287,55 @@
             <p class="text-sm text-gray-200 px-4">Ride-sharing platform for local commuting needs</p>
           </div>
         </div>
-      </div>
+      </div>-->
 
       <!-- Medical Project -->
       <div class="project-card" data-category="medical">
         <div class="relative group rounded overflow-hidden shadow-lg">
-          <img src="assets/img/portfolio/portfolio-6.jpg" alt="Medical App" class="w-full h-64 object-cover">
+          <img src="images/medi.png" alt="Medical App" class="w-full h-64 object-cover">
           <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-center transition">
-            <i class="bx bx-link text-blue-500 text-3xl mb-2"></i>
-            <p class="text-sm text-gray-200 px-4">Mobile app for appointment scheduling and tracking</p>
+<a href="https://github.com/senali2001/Hospital-Management-System" target="_blank">
+  <i class="bx bx-link text-blue-500 text-3xl mb-2"></i>
+</a>            <p class="text-sm text-gray-200 px-4">Hospital Management System Using Java Servlets</p>
           </div>
         </div>
       </div>
+
+        <!-- mind care -->
+
+   <div class="project-card" data-category="medical" data-category="medical ai related">
+        <div class="relative group rounded overflow-hidden shadow-lg">
+          <img src="images/mind care.png" alt="Other Project" class="w-full h-64 object-cover">
+          <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-center transition">
+          <a href="https://cslaustria.at/" target="_blank">
+            <i class="bx bx-link text-blue-500 text-3xl mb-2"></i>
+          </a>
+            <p class="text-sm text-gray-200 px-4">Mind Care Mobile Application integreted with AI</p>
+          </div>
+        </div>
+      </div>
+
+        <!-- cslastria Project -->
+
+   <div class="project-card" data-category="other">
+        <div class="relative group rounded overflow-hidden shadow-lg">
+          <img src="images/csla.png" alt="Other Project" class="w-full h-64 object-cover">
+          <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-center transition">
+          <a href="https://cslaustria.at/" target="_blank">
+            <i class="bx bx-link text-blue-500 text-3xl mb-2"></i>
+          </a>
+            <p class="text-sm text-gray-200 px-4">Clean Sri Lanka - Austria Association Official Website</p>
+          </div>
+        </div>
+      </div>
+
+
     </div>
   </div>
 </section>
+
+
+      
 <!-- Project Card Section End -->
 
 
