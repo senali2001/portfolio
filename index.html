@@ -30,11 +30,14 @@
 
     <!-- menu list -->
     <ul class="flex space-x-12 text-sm font-medium">
-      <li><a href="#home" class="text-white hover:text-blue-500 transition duration-200" class="active">Home</a></li>
-      <li><a href="#about" class="text-white hover:text-blue-500 transition duration-200" onclick="">About</a></li>
+      <li><a href="#home" class="text-white hover:text-blue-500 transition duration-200 active-link">Home</a></li>
+      <li><a href="#about" class="text-white hover:text-blue-500 transition duration-200">About</a></li>
       <li><a href="#education" class="text-white hover:text-blue-500 transition duration-200">Education</a></li>
+      <li><a href="#tech-stack" class="text-white hover:text-blue-500 transition duration-200">Tech Stack</a></li>
+      <li><a href="#achievements" class="text-white hover:text-blue-500 transition duration-200">Achievements</a></li>
       <li><a href="#projects" class="text-white hover:text-blue-500 transition duration-200">Projects</a></li>
-
+      <li><a href="#certificates" class="text-white hover:text-blue-500 transition duration-200">Certificates</a></li>
+      <li><a href="#workshops" class="text-white hover:text-blue-500 transition duration-200">Workshops</a></li>
       <li><a href="#contact" class="text-white hover:text-blue-500 transition duration-200">Contact</a></li>
     </ul>
   </nav>
@@ -43,7 +46,7 @@
 
 
   <!--Home section start-->
-  <section class="bg-black min-h-screen flex items-center px-2 md:px-6">
+  <section id="home" class="bg-black min-h-screen flex items-center px-2 md:px-6">
     <div class="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
 
@@ -202,144 +205,238 @@
 
   <!--education section end-->
 
-   <!--project cards start-->
+  
 
-<!-- Project Card Section Start -->
-<section id="projects" class="bg-gray-800 py-16 px-4 text-white">
-  <div class="max-w-7xl mx-auto">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl font-bold text-blue-500 mb-4">Projects</h2>
-      <p class="max-w-2xl mx-auto text-gray-300">
-        Explore my projects categorized by industry. Hover to learn more about each.
-      </p>
+  <!-- tech stack section start -->
+  <section id="tech-stack" class="bg-gray-900 py-16 px-4 md:px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12" data-aos="fade-up" data-aos-duration="1000">
+        <p class="text-blue-400 uppercase tracking-[0.3em] text-sm font-semibold mb-3">Core Skills</p>
+        <h2 class="text-white text-4xl md:text-5xl font-extrabold leading-tight">
+          My <span class="text-blue-400">Tech Stack</span>
+        </h2>
+      </div>
+
+      <div class="tech-grid">
+        <div class="tech-item" data-aos="zoom-in" data-aos-duration="800"><i class='bx bxl-java'></i><span>Java</span></div>
+        <div class="tech-item" data-aos="zoom-in" data-aos-duration="900"><i class='bx bxl-javascript'></i><span>JavaScript</span></div>
+        <div class="tech-item" data-aos="zoom-in" data-aos-duration="1000"><i class='bx bxl-python'></i><span>Python</span></div>
+        <div class="tech-item" data-aos="zoom-in" data-aos-duration="1100"><i class='bx bxl-react'></i><span>React</span></div>
+        <div class="tech-item" data-aos="zoom-in" data-aos-duration="1200"><i class='bx bxl-nodejs'></i><span>Node.js</span></div>
+        <div class="tech-item" data-aos="zoom-in" data-aos-duration="1300"><i class='bx bx-data'></i><span>SQL</span></div>
+        <div class="tech-item" data-aos="zoom-in" data-aos-duration="1400"><i class='bx bx-cog'></i><span>Spring Boot</span></div>
+        <div class="tech-item" data-aos="zoom-in" data-aos-duration="1500"><i class='bx bx-code-alt'></i><span>C#</span></div>
+        <div class="tech-item" data-aos="zoom-in" data-aos-duration="1600"><i class='bx bxl-git'></i><span>Git</span></div>
+        <div class="tech-item" data-aos="zoom-in" data-aos-duration="1700"><i class='bx bxl-figma'></i><span>Figma</span></div>
+        <div class="tech-item" data-aos="zoom-in" data-aos-duration="1800"><i class='bx bx-brain'></i><span>AI</span></div>
+        <div class="tech-item" data-aos="zoom-in" data-aos-duration="1900"><i class='bx bx-cloud'></i><span>Cloud</span></div>
+      </div>
     </div>
+  </section>
+  <!-- tech stack section end -->
 
-    <!-- Category Filters -->
-    <div class="flex flex-wrap justify-center gap-4 mb-10">
-      <button onclick="filterProjects('all')" class="filter-btn px-4 py-2 text-sm font-medium border border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white transition">All</button>
-      <button onclick="filterProjects('retail')" class="filter-btn px-4 py-2 text-sm font-medium border border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white transition">Retail</button>
-      <button onclick="filterProjects('medical')" class="filter-btn px-4 py-2 text-sm font-medium border border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white transition">Medical</button>
-      <button onclick="filterProjects('tourism')" class="filter-btn px-4 py-2 text-sm font-medium border border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white transition">Tourism</button>
-      <button onclick="filterProjects('ai related')" class="filter-btn px-4 py-2 text-sm font-medium border border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white transition">AI Related</button>
-      <button onclick="filterProjects('other')" class="filter-btn px-4 py-2 text-sm font-medium border border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white transition">Other</button>
+  <!-- project cards start -->
+  <section id="projects" class="bg-gray-800 py-16 px-4 text-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-blue-500 mb-4">Projects</h2>
+        <p class="max-w-2xl mx-auto text-gray-300">
+          Explore my projects categorized by industry. Hover to learn more about each.
+        </p>
+      </div>
 
+      <div class="flex flex-wrap justify-center gap-4 mb-10">
+        <button onclick="filterProjects('all')" class="filter-btn px-4 py-2 text-sm font-medium border border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white transition">All</button>
+        <button onclick="filterProjects('retail')" class="filter-btn px-4 py-2 text-sm font-medium border border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white transition">Retail</button>
+        <button onclick="filterProjects('medical')" class="filter-btn px-4 py-2 text-sm font-medium border border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white transition">Medical</button>
+        <button onclick="filterProjects('tourism')" class="filter-btn px-4 py-2 text-sm font-medium border border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white transition">Tourism</button>
+        <button onclick="filterProjects('ai related')" class="filter-btn px-4 py-2 text-sm font-medium border border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white transition">AI Related</button>
+        <button onclick="filterProjects('other')" class="filter-btn px-4 py-2 text-sm font-medium border border-blue-500 text-blue-500 rounded hover:bg-blue-500 hover:text-white transition">Other</button>
+      </div>
+
+      <div id="projectGrid" class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="project-card" data-category="retail">
+          <div class="relative group rounded overflow-hidden shadow-lg">
+            <img src="images/ERP Retail.jpg" alt="erp Application" class="w-full h-64 object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-center transition">
+              <a href="https://github.com/senali2001/ERP-System" target="_blank">
+                <i class="bx bx-link text-blue-500 text-3xl mb-2"></i>
+              </a>
+              <p class="text-sm text-gray-200 px-4">ERP for Retail Bussiness</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="tourism">
+          <div class="relative group rounded overflow-hidden shadow-lg">
+            <img src="images/tourism.jpg" alt="Tourism App" class="w-full h-64 object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-center transition">
+              <a href="https://github.com/Sithila26/Travel-Website" target="_blank">
+                <i class="bx bx-link text-blue-500 text-3xl mb-2"></i>
+              </a>
+              <p class="text-sm text-gray-200 px-4">Tourims application for travel planning</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="ai related">
+          <div class="relative group rounded overflow-hidden shadow-lg">
+            <img src="images/chatbot.avif" alt="Other Project" class="w-full h-64 object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-center transition">
+              <a href="https://github.com/senali2001/Basic-Chatbot" target="_blank">
+                <i class="bx bx-link text-blue-500 text-3xl mb-2"></i>
+              </a>
+              <p class="text-sm text-gray-200 px-4">Simple AI chatbot</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="medical">
+          <div class="relative group rounded overflow-hidden shadow-lg">
+            <img src="images/medi.png" alt="Medical App" class="w-full h-64 object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-center transition">
+              <a href="https://github.com/senali2001/Hospital-Management-System" target="_blank">
+                <i class="bx bx-link text-blue-500 text-3xl mb-2"></i>
+              </a>
+              <p class="text-sm text-gray-200 px-4">Hospital Management System Using Java Servlets</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="medical ai related">
+          <div class="relative group rounded overflow-hidden shadow-lg">
+            <img src="images/mind care.png" alt="Other Project" class="w-full h-64 object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-center transition">
+              <a href="https://cslaustria.at/" target="_blank">
+                <i class="bx bx-link text-blue-500 text-3xl mb-2"></i>
+              </a>
+              <p class="text-sm text-gray-200 px-4">Mind Care Mobile Application integreted with AI</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <!-- Portfolio Grid -->
-    <div id="projectGrid" class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-      <!-- ERP retail Project -->
-      <div class="project-card" data-category="retail">
-        <div class="relative group rounded overflow-hidden shadow-lg">
-          <img src="images/ERP Retail.jpg" alt="erp Application" class="w-full h-64 object-cover">
-          <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-center transition">
-            <a href="https://github.com/senali2001/ERP-System" target="_blank">
-              <i class="bx bx-link text-blue-500 text-3xl mb-2"></i>
-            </a>
-            <p class="text-sm text-gray-200 px-4">ERP for Retail Bussiness</p>
-          </div>
-        </div>
+  </section>
+  <!-- project cards end -->
+   <!-- achievement section start -->
+  <section id="achievements" class="bg-gray-900 py-16 px-4 md:px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12" data-aos="fade-up" data-aos-duration="1000">
+        <p class="text-blue-400 uppercase tracking-[0.3em] text-sm font-semibold mb-3">Highlights</p>
+        <h2 class="text-white text-4xl md:text-5xl font-extrabold leading-tight">
+          My <span class="text-blue-400">Achievements</span>
+        </h2>
       </div>
 
-      <!-- Medical Project -->
-      <!--<div class="project-card" data-category="medical">
-        <div class="relative group rounded overflow-hidden shadow-lg">
-          <img src="assets/img/portfolio/portfolio-2.jpg" alt="Medical System" class="w-full h-64 object-cover">
-          <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-center transition">
-            <i class="bx bx-link text-blue-500 text-3xl mb-2"></i>
-            <p class="text-sm text-gray-200 px-4">Hospital management system with e-prescription</p>
-          </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="achievement-card" data-aos="zoom-in" data-aos-duration="900">
+          <div class="achievement-icon"><i class='bx bx-trophy'></i></div>
+          <h3>Hackathon & Competition Participation</h3>
+          <p>Actively took part in coding and innovation competitions, including AlgoXplore, Ideathon, and Brainwave, strengthening problem-solving and teamwork.</p>
         </div>
-      </div>-->
 
-      <!-- Tourism Project -->
-      <div class="project-card" data-category="tourism">
-        <div class="relative group rounded overflow-hidden shadow-lg">
-          <img src="images/tourism.jpg" alt="Tourism App" class="w-full h-64 object-cover">
-          <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-center transition">
-            <a href="https://github.com/Sithila26/Travel-Website" target="_blank">
-              <i class="bx bx-link text-blue-500 text-3xl mb-2"></i>
-            </a>
-            <p class="text-sm text-gray-200 px-4">Tourims application for travel planning</p>
-          </div>
+        <div class="achievement-card" data-aos="zoom-in" data-aos-duration="1200">
+          <div class="achievement-icon"><i class='bx bx-badge-check'></i></div>
+          <h3>Leadership in IEEE NSBM</h3>
+          <p>Serving as an active member of the IEEE community, contributing to student engagement, technical learning, and project collaborations.</p>
+        </div>
+
+        <div class="achievement-card" data-aos="zoom-in" data-aos-duration="1400">
+          <div class="achievement-icon"><i class='bx bx-rocket'></i></div>
+          <h3>Academic & Technical Growth</h3>
+          <p>Consistently building real-world software solutions across full-stack, AI, healthcare, and retail domains while refining technical skills through practical projects.</p>
         </div>
       </div>
-
-      <!-- AI related -->
-      <div class="project-card" data-category="ai related">
-        <div class="relative group rounded overflow-hidden shadow-lg">
-          <img src="images/chatbot.avif" alt="Other Project" class="w-full h-64 object-cover">
-          <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-center transition">
-          <a href="https://github.com/senali2001/Basic-Chatbot" target="_blank">
-            <i class="bx bx-link text-blue-500 text-3xl mb-2"></i>
-          </a>
-            <p class="text-sm text-gray-200 px-4">Simple AI chatbot</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Transport Project -->
-
-      <!-- <div class="project-card" data-category="transport">
-        <div class="relative group rounded overflow-hidden shadow-lg">
-          <img src="assets/img/portfolio/portfolio-5.jpg" alt="Transport Project" class="w-full h-64 object-cover">
-          <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-center transition">
-            <i class="bx bx-link text-blue-500 text-3xl mb-2"></i>
-            <p class="text-sm text-gray-200 px-4">Ride-sharing platform for local commuting needs</p>
-          </div>
-        </div>
-      </div>-->
-
-      <!-- Medical Project -->
-      <div class="project-card" data-category="medical">
-        <div class="relative group rounded overflow-hidden shadow-lg">
-          <img src="images/medi.png" alt="Medical App" class="w-full h-64 object-cover">
-          <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-center transition">
-<a href="https://github.com/senali2001/Hospital-Management-System" target="_blank">
-  <i class="bx bx-link text-blue-500 text-3xl mb-2"></i>
-</a>            <p class="text-sm text-gray-200 px-4">Hospital Management System Using Java Servlets</p>
-          </div>
-        </div>
-      </div>
-
-        <!-- mind care -->
-
-   <div class="project-card" data-category="medical" data-category="medical ai related">
-        <div class="relative group rounded overflow-hidden shadow-lg">
-          <img src="images/mind care.png" alt="Other Project" class="w-full h-64 object-cover">
-          <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-center transition">
-          <a href="https://cslaustria.at/" target="_blank">
-            <i class="bx bx-link text-blue-500 text-3xl mb-2"></i>
-          </a>
-            <p class="text-sm text-gray-200 px-4">Mind Care Mobile Application integreted with AI</p>
-          </div>
-        </div>
-      </div>
-
-        <!-- cslastria Project -->
-
-   <!--<div class="project-card" data-category="other">
-        <div class="relative group rounded overflow-hidden shadow-lg">
-          <img src="images/csla.png" alt="Other Project" class="w-full h-64 object-cover">
-          <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center text-center transition">
-          <a href="https://cslaustria.at/" target="_blank">
-            <i class="bx bx-link text-blue-500 text-3xl mb-2"></i>
-          </a>
-            <p class="text-sm text-gray-200 px-4">Clean Sri Lanka - Austria Association Official Website</p>
-          </div>
-        </div>
-      </div>-->
-
-
     </div>
-  </div>
-</section>
+  </section>
+  <!-- achievement section end -->
 
+  <!-- certificates section start -->
+  <section id="certificates" class="bg-black py-16 px-4 md:px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12" data-aos="fade-up" data-aos-duration="1000">
+        <p class="text-blue-400 uppercase tracking-[0.3em] text-sm font-semibold mb-3">Credentials</p>
+        <h2 class="text-white text-4xl md:text-5xl font-extrabold leading-tight">
+          My <span class="text-blue-400">Certificates</span>
+        </h2>
+      </div>
 
-      
-<!-- Project Card Section End -->
+      <div class="certificate-grid">
+        <div class="certificate-card" data-aos="fade-up" data-aos-duration="800">
+          <img src="e%20certificates/Agile%20Scrum%20Master%20certificate_page-0001.jpg" alt="Agile Scrum Master Certificate">
+          <div class="certificate-caption">Agile Scrum Master</div>
+        </div>
+        <div class="certificate-card" data-aos="fade-up" data-aos-duration="900">
+          <img src="e%20certificates/python%20fundimentals%20certificate_page-0001.jpg" alt="Python Fundamentals Certificate">
+          <div class="certificate-caption">Python Fundamentals</div>
+        </div>
+        <div class="certificate-card" data-aos="fade-up" data-aos-duration="1000">
+          <img src="e%20certificates/navigate%20github%20copilote%20certificate_page-0001.jpg" alt="GitHub Copilot Certificate">
+          <div class="certificate-caption">GitHub Copilot</div>
+        </div>
+        <div class="certificate-card" data-aos="fade-up" data-aos-duration="1100">
+          <img src="e%20certificates/create%20chatbot%20workshop_page-0001.jpg" alt="Chatbot Workshop Certificate">
+          <div class="certificate-caption">Chatbot Workshop</div>
+        </div>
+        <div class="certificate-card" data-aos="fade-up" data-aos-duration="1200">
+          <img src="e%20certificates/jpuraxtreme_2_Participation_certificate-242-%20competition_page-0001.jpg" alt="JpuraXtreme Competition Certificate">
+          <div class="certificate-caption">JpuraXtreme Competition</div>
+        </div>
+        <div class="certificate-card" data-aos="fade-up" data-aos-duration="1300">
+          <img src="e%20certificates/2024%20STEM%20Summit%20Certificate%20of%20Participation%20workshop_page-0001.jpg" alt="STEM Summit Certificate">
+          <div class="certificate-caption">STEM Summit</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- certificates section end -->
 
+  <!-- workshop participation section start -->
+  <section id="workshops" class="bg-gray-900 py-16 px-4 md:px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12" data-aos="fade-up" data-aos-duration="1000">
+        <p class="text-blue-400 uppercase tracking-[0.3em] text-sm font-semibold mb-3">Learning</p>
+        <h2 class="text-white text-4xl md:text-5xl font-extrabold leading-tight">
+          Workshop <span class="text-blue-400">Participation</span>
+        </h2>
+      </div>
 
+      <div class="workshop-grid">
+        <div class="workshop-card" data-aos="flip-left" data-aos-duration="900">
+          <img src="e%20certificates/road%20to%20legacy%20workshop.png" alt="Road to Legacy Workshop">
+          <div class="workshop-content">
+            <h3>Road to Legacy</h3>
+            <p>Explored leadership, innovation, and long-term impact in the tech industry.</p>
+          </div>
+        </div>
 
+        <div class="workshop-card" data-aos="flip-left" data-aos-duration="1100">
+          <img src="e%20certificates/Figmate%20figma%20workshop.png" alt="Figma Workshop">
+          <div class="workshop-content">
+            <h3>Figma Design Workshop</h3>
+            <p>Improved UI/UX thinking and prototyping skills with modern design workflows.</p>
+          </div>
+        </div>
+
+        <div class="workshop-card" data-aos="flip-left" data-aos-duration="1300">
+          <img src="e%20certificates/cybersecurity%20shield%203.0%20sliit%20workshop.png" alt="Cybersecurity Workshop">
+          <div class="workshop-content">
+            <h3>Cybersecurity Shield 3.0</h3>
+            <p>Learned key principles of digital security, safe practices, and cyber awareness.</p>
+          </div>
+        </div>
+
+        <div class="workshop-card" data-aos="flip-left" data-aos-duration="1500">
+          <img src="e%20certificates/math%20lab%20workshop.jpg" alt="Math Lab Workshop">
+          <div class="workshop-content">
+            <h3>Math Lab Workshop</h3>
+            <p>Strengthened analytical and problem-solving capabilities using technical tools.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- workshop participation section end -->
 
    <!-- Contact Section  and footer-->
 <section class="bg-black py-12 px-4">

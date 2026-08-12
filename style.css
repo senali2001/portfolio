@@ -154,3 +154,139 @@ footer {
   text-align: center;
   padding: 20px;
 }
+
+.active-link {
+  color: #60a5fa !important;
+}
+
+.achievement-card {
+  background: linear-gradient(145deg, rgba(17, 24, 39, 0.95), rgba(30, 41, 59, 0.9));
+  border: 1px solid rgba(96, 165, 250, 0.25);
+  border-radius: 1.25rem;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 15px 35px rgba(14, 116, 144, 0.15);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(96, 165, 250, 0.8);
+}
+
+.achievement-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(59, 130, 246, 0.15);
+  color: #60a5fa;
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.achievement-card h3 {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.achievement-card p {
+  color: #d1d5db;
+  line-height: 1.7;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.tech-item {
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(96, 165, 250, 0.2);
+  border-radius: 1rem;
+  padding: 1.2rem 1rem;
+  text-align: center;
+  color: #e2e8f0;
+  font-weight: 600;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-item:hover {
+  transform: translateY(-5px);
+  border-color: rgba(96, 165, 250, 0.7);
+  box-shadow: 0 15px 25px rgba(59, 130, 246, 0.1);
+}
+
+.tech-item i {
+  display: block;
+  font-size: 2rem;
+  color: #60a5fa;
+  margin-bottom: 0.6rem;
+}
+
+.certificate-grid,
+.workshop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.certificate-card,
+.workshop-card {
+  background: rgba(17, 24, 39, 0.75);
+  border: 1px solid rgba(96, 165, 250, 0.18);
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+.certificate-card:hover,
+.workshop-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 30px rgba(59, 130, 246, 0.18);
+}
+
+.certificate-card img,
+.workshop-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.certificate-caption {
+  padding: 0.75rem 0.85rem;
+  background: rgba(15, 23, 42, 0.9);
+  color: #e5e7eb;
+  font-weight: 600;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.workshop-content {
+  padding: 1rem 1rem 1.25rem;
+}
+
+.workshop-content h3 {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.workshop-content p {
+  color: #d1d5db;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .certificate-card img,
+  .workshop-card img {
+    height: 220px;
+  }
+}
