@@ -208,6 +208,7 @@ footer {
 }
 
 .tech-item {
+  --tech-color: #60a5fa;
   background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(30, 41, 59, 0.8));
   border: 1px solid rgba(96, 165, 250, 0.2);
   border-radius: 1rem;
@@ -231,6 +232,7 @@ footer {
 }
 
 .tech-item i {
+  color: var(--tech-color) !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -250,30 +252,30 @@ footer {
   letter-spacing: 0.02em;
 }
 
-.tech-item:nth-child(1) { border-color: rgba(251, 191, 36, 0.6); background: linear-gradient(135deg, rgba(251, 191, 36, 0.18), rgba(15, 23, 42, 0.9)); }
-.tech-item:nth-child(1) i { color: #fbbf24; background: rgba(251, 191, 36, 0.14); }
-.tech-item:nth-child(2) { border-color: rgba(248, 113, 113, 0.6); background: linear-gradient(135deg, rgba(248, 113, 113, 0.18), rgba(15, 23, 42, 0.9)); }
-.tech-item:nth-child(2) i { color: #f87171; background: rgba(248, 113, 113, 0.14); }
-.tech-item:nth-child(3) { border-color: rgba(96, 165, 250, 0.6); background: linear-gradient(135deg, rgba(96, 165, 250, 0.18), rgba(15, 23, 42, 0.9)); }
-.tech-item:nth-child(3) i { color: #60a5fa; background: rgba(96, 165, 250, 0.14); }
-.tech-item:nth-child(4) { border-color: rgba(34, 211, 238, 0.6); background: linear-gradient(135deg, rgba(34, 211, 238, 0.18), rgba(15, 23, 42, 0.9)); }
-.tech-item:nth-child(4) i { color: #22d3ee; background: rgba(34, 211, 238, 0.14); }
-.tech-item:nth-child(5) { border-color: rgba(74, 222, 128, 0.6); background: linear-gradient(135deg, rgba(74, 222, 128, 0.18), rgba(15, 23, 42, 0.9)); }
-.tech-item:nth-child(5) i { color: #4ade80; background: rgba(74, 222, 128, 0.14); }
-.tech-item:nth-child(6) { border-color: rgba(244, 114, 182, 0.6); background: linear-gradient(135deg, rgba(244, 114, 182, 0.18), rgba(15, 23, 42, 0.9)); }
-.tech-item:nth-child(6) i { color: #f472b6; background: rgba(244, 114, 182, 0.14); }
-.tech-item:nth-child(7) { border-color: rgba(168, 85, 247, 0.6); background: linear-gradient(135deg, rgba(168, 85, 247, 0.18), rgba(15, 23, 42, 0.9)); }
-.tech-item:nth-child(7) i { color: #a855f7; background: rgba(168, 85, 247, 0.14); }
-.tech-item:nth-child(8) { border-color: rgba(45, 212, 191, 0.6); background: linear-gradient(135deg, rgba(45, 212, 191, 0.18), rgba(15, 23, 42, 0.9)); }
-.tech-item:nth-child(8) i { color: #2dd4bf; background: rgba(45, 212, 191, 0.14); }
-.tech-item:nth-child(9) { border-color: rgba(251, 146, 60, 0.6); background: linear-gradient(135deg, rgba(251, 146, 60, 0.18), rgba(15, 23, 42, 0.9)); }
-.tech-item:nth-child(9) i { color: #fb923c; background: rgba(251, 146, 60, 0.14); }
-.tech-item:nth-child(10) { border-color: rgba(99, 102, 241, 0.6); background: linear-gradient(135deg, rgba(99, 102, 241, 0.18), rgba(15, 23, 42, 0.9)); }
-.tech-item:nth-child(10) i { color: #818cf8; background: rgba(99, 102, 241, 0.14); }
-.tech-item:nth-child(11) { border-color: rgba(45, 212, 191, 0.6); background: linear-gradient(135deg, rgba(45, 212, 191, 0.18), rgba(15, 23, 42, 0.9)); }
-.tech-item:nth-child(11) i { color: #2dd4bf; background: rgba(45, 212, 191, 0.14); }
-.tech-item:nth-child(12) { border-color: rgba(96, 165, 250, 0.6); background: linear-gradient(135deg, rgba(96, 165, 250, 0.18), rgba(15, 23, 42, 0.9)); }
-.tech-item:nth-child(12) i { color: #60a5fa; background: rgba(96, 165, 250, 0.14); }
+.tech-item:nth-child(1) { --tech-color: #fbbf24; border-color: rgba(251, 191, 36, 0.6); background: linear-gradient(135deg, rgba(251, 191, 36, 0.18), rgba(15, 23, 42, 0.9)); }
+.tech-item:nth-child(1) i { background: rgba(251, 191, 36, 0.14); }
+.tech-item:nth-child(2) { --tech-color: #f87171; border-color: rgba(248, 113, 113, 0.6); background: linear-gradient(135deg, rgba(248, 113, 113, 0.18), rgba(15, 23, 42, 0.9)); }
+.tech-item:nth-child(2) i { background: rgba(248, 113, 113, 0.14); }
+.tech-item:nth-child(3) { --tech-color: #60a5fa; border-color: rgba(96, 165, 250, 0.6); background: linear-gradient(135deg, rgba(96, 165, 250, 0.18), rgba(15, 23, 42, 0.9)); }
+.tech-item:nth-child(3) i { background: rgba(96, 165, 250, 0.14); }
+.tech-item:nth-child(4) { --tech-color: #22d3ee; border-color: rgba(34, 211, 238, 0.6); background: linear-gradient(135deg, rgba(34, 211, 238, 0.18), rgba(15, 23, 42, 0.9)); }
+.tech-item:nth-child(4) i { background: rgba(34, 211, 238, 0.14); }
+.tech-item:nth-child(5) { --tech-color: #4ade80; border-color: rgba(74, 222, 128, 0.6); background: linear-gradient(135deg, rgba(74, 222, 128, 0.18), rgba(15, 23, 42, 0.9)); }
+.tech-item:nth-child(5) i { background: rgba(74, 222, 128, 0.14); }
+.tech-item:nth-child(6) { --tech-color: #f472b6; border-color: rgba(244, 114, 182, 0.6); background: linear-gradient(135deg, rgba(244, 114, 182, 0.18), rgba(15, 23, 42, 0.9)); }
+.tech-item:nth-child(6) i { background: rgba(244, 114, 182, 0.14); }
+.tech-item:nth-child(7) { --tech-color: #a855f7; border-color: rgba(168, 85, 247, 0.6); background: linear-gradient(135deg, rgba(168, 85, 247, 0.18), rgba(15, 23, 42, 0.9)); }
+.tech-item:nth-child(7) i { background: rgba(168, 85, 247, 0.14); }
+.tech-item:nth-child(8) { --tech-color: #2dd4bf; border-color: rgba(45, 212, 191, 0.6); background: linear-gradient(135deg, rgba(45, 212, 191, 0.18), rgba(15, 23, 42, 0.9)); }
+.tech-item:nth-child(8) i { background: rgba(45, 212, 191, 0.14); }
+.tech-item:nth-child(9) { --tech-color: #fb923c; border-color: rgba(251, 146, 60, 0.6); background: linear-gradient(135deg, rgba(251, 146, 60, 0.18), rgba(15, 23, 42, 0.9)); }
+.tech-item:nth-child(9) i { background: rgba(251, 146, 60, 0.14); }
+.tech-item:nth-child(10) { --tech-color: #818cf8; border-color: rgba(99, 102, 241, 0.6); background: linear-gradient(135deg, rgba(99, 102, 241, 0.18), rgba(15, 23, 42, 0.9)); }
+.tech-item:nth-child(10) i { background: rgba(99, 102, 241, 0.14); }
+.tech-item:nth-child(11) { --tech-color: #2dd4bf; border-color: rgba(45, 212, 191, 0.6); background: linear-gradient(135deg, rgba(45, 212, 191, 0.18), rgba(15, 23, 42, 0.9)); }
+.tech-item:nth-child(11) i { background: rgba(45, 212, 191, 0.14); }
+.tech-item:nth-child(12) { --tech-color: #60a5fa; border-color: rgba(96, 165, 250, 0.6); background: linear-gradient(135deg, rgba(96, 165, 250, 0.18), rgba(15, 23, 42, 0.9)); }
+.tech-item:nth-child(12) i { background: rgba(96, 165, 250, 0.14); }
 
 .certificate-grid,
 .workshop-grid {
