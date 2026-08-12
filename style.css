@@ -278,9 +278,10 @@ footer {
 .tech-item:nth-child(12) i { background: rgba(96, 165, 250, 0.14); }
 
 .certificate-grid,
+.competition-grid,
 .workshop-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(180px, 1fr));
+  grid-template-columns: repeat(2, minmax(180px, 1fr));
   gap: 1.25rem;
   align-items: stretch;
 }
@@ -315,13 +316,6 @@ footer {
   height: 220px;
   object-fit: cover;
   display: block;
-}
-
-.certificate-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(170px, 1fr));
-  gap: 1.2rem;
-  align-items: stretch;
 }
 
 .certificate-card img {
@@ -359,12 +353,10 @@ footer {
     grid-template-columns: repeat(3, minmax(120px, 1fr));
   }
 
-  .certificate-grid {
-    grid-template-columns: repeat(2, minmax(160px, 1fr));
-  }
-
+  .certificate-grid,
+  .competition-grid,
   .workshop-grid {
-    grid-template-columns: repeat(2, minmax(180px, 1fr));
+    grid-template-columns: repeat(2, minmax(160px, 1fr));
   }
 }
 
@@ -374,6 +366,7 @@ footer {
   }
 
   .certificate-grid,
+  .competition-grid,
   .workshop-grid {
     grid-template-columns: 1fr;
   }
