@@ -1,0 +1,15 @@
+{
+  "buildCommand": "npm install",
+  "framework": "static",
+  "regions": ["sfo1"],
+  "env": [
+    {
+      "key": "GMAIL_USER",
+      "description": "Your Gmail email address (the email that will send the contact form emails)"
+    },
+    {
+      "key": "GMAIL_APP_PASSWORD",
+      "description": "Your Gmail App Password (16-character password generated from Google Account Security)"
+    }
+  ]
+}

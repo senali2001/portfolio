@@ -1,0 +1,19 @@
+{
+  "name": "navodhya-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website with contact form",
+  "private": true,
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "vercel build"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.7"
+  },
+  "devDependencies": {
+    "vercel": "^33.0.0"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
