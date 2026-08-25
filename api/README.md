@@ -1,6 +1,6 @@
 # Contact Form API
 
-This serverless function handles contact form submissions and sends emails using Gmail SMTP.
+This serverless function sends contact form emails using Gmail SMTP.
 
 ## How It Works
 
