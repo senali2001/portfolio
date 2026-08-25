@@ -621,7 +621,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
       <!-- Contact Form -->
       <div class="contact-form-container" data-aos="fade-right" data-aos-duration="1000">
-        <form id="contactForm" class="contact-form space-y-6" action="https://formspree.io/f/mgedlqn1" method="POST">
+        <form id="contactForm" class="contact-form space-y-6" action="https://formspree.io/f/mwlednaz" method="POST">
           <div>
             <label for="name" class="block text-white font-semibold mb-2">Full Name</label>
             <input type="text" id="name" name="name" required 
@@ -862,7 +862,10 @@ document.getElementById('contactForm').addEventListener('submit', async (e) => {
         submitText.textContent = 'Send Message';
       }, 3000);
     } else {
-      throw new Error('Failed to send');
+      const result = await response.json().catch(() => ({}));
+      const details = result.errors?.map(error => error.message).join(' ') ||
+        `Formspree returned HTTP ${response.status}.`;
+      throw new Error(details);
     }
   } catch (error) {
     console.error('Contact form error:', error);
@@ -872,7 +875,7 @@ document.getElementById('contactForm').addEventListener('submit', async (e) => {
     const emailSubject = encodeURIComponent(formDataObj.subject);
     const emailBody = encodeURIComponent(`Name: ${formDataObj.name}\nEmail: ${formDataObj.email}\n\nMessage:\n${formDataObj.message}`);
     
-    formMessage.innerHTML = `✗ Could not send message automatically. <br><br>
+    formMessage.innerHTML = `✗ ${error.message} <br><br>
       <strong>No problem!</strong> You can still reach me by clicking below:<br><br>
       <a href="mailto:${fallbackEmail}?subject=${emailSubject}&body=${emailBody}" class="inline-block mt-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">Send via Email</a>`;
     formMessage.className = 'text-center text-sm mt-4 text-yellow-400';
