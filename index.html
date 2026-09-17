@@ -29,8 +29,12 @@
       SENALI R.B.N
     </div>
 
+    <button id="navToggle" class="nav-toggle md:hidden" type="button" aria-expanded="false" aria-controls="primaryNavigation" aria-label="Toggle navigation">
+      <i class='bx bx-menu' aria-hidden="true"></i>
+    </button>
+
     <!-- menu list -->
-    <ul class="flex space-x-12 text-sm font-medium">
+    <ul id="primaryNavigation" class="nav-menu flex space-x-12 text-sm font-medium">
       <li><a href="#home" class="text-white hover:text-blue-500 transition duration-200 active-link">Home</a></li>
       <li><a href="#about" class="text-white hover:text-blue-500 transition duration-200">About</a></li>
       <li><a href="#education" class="text-white hover:text-blue-500 transition duration-200">Education</a></li>
@@ -47,6 +51,33 @@
     </ul>
   </nav>
   <!--Navbar end-->
+
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const primaryNavigation = document.getElementById('primaryNavigation');
+
+    navToggle.addEventListener('click', () => {
+      const isOpen = primaryNavigation.classList.toggle('is-open');
+      navToggle.setAttribute('aria-expanded', String(isOpen));
+      navToggle.querySelector('i').className = isOpen ? 'bx bx-x' : 'bx bx-menu';
+    });
+
+    primaryNavigation.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        primaryNavigation.classList.remove('is-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.querySelector('i').className = 'bx bx-menu';
+      });
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
+        primaryNavigation.classList.remove('is-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.querySelector('i').className = 'bx bx-menu';
+      }
+    });
+  </script>
 
 
 
@@ -879,10 +910,11 @@
   var typed = new Typed("#typing-text", {
 strings: [
   "Full-Stack Developer",
-  "Quality Assurance Enthusiast",
+  "Backend Developer",
   "Tech Explorer",
   "Research Enthusiast",
-  "Cloud Computing Learner"
+  "Cloud Computing Learner",
+  "AI/ML Enthusiast"
 ],      typeSpeed: 60,
       backSpeed: 40,
       loop: true,
