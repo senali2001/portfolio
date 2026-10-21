@@ -4,8 +4,8 @@ This serverless function sends contact form emails using Gmail SMTP.
 
 ## How It Works
 
-1. Frontend form (index.html) submits data to `/api/send-email`
-2. This Node.js function processes the request
+1. The Next.js contact form submits data to `/api/send-email`
+2. The Next.js route handler processes the request
 3. Sends two emails:
    - One to the portfolio owner (navodhyasenali@gmail.com)
    - One confirmation email to the form submitter
@@ -20,7 +20,7 @@ GMAIL_APP_PASSWORD=16-character-app-password
 ## Function Details
 
 - **Method:** POST only
-- **Endpoint:** `/api/send-email`
+- **Endpoint:** `app/api/send-email/route.js` (`/api/send-email`)
 - **Request Body:**
   ```json
   {
@@ -57,8 +57,8 @@ GMAIL_APP_PASSWORD=16-character-app-password
 
 ## Local Testing
 
-1. Create `.env.local` in project root with your credentials
-2. Run `npm run dev`
+1. Create `.env.local` in the project root with your credentials
+2. Run `npm install` and then `npm run dev`
 3. Test via http://localhost:3000
 
 ## Deployment

@@ -64,7 +64,7 @@ npm install
 npm run dev
 ```
 
-This starts a local Vercel environment. Navigate to your localhost URL and test the contact form.
+This starts the Next.js development server. Navigate to your localhost URL and test the contact form.
 
 ---
 
@@ -174,15 +174,17 @@ Your project should now have:
 
 ```
 portfolio/
-├── index.html                 # Updated with contact form
-├── style.css                  # Updated with form styles
-├── package.json              # Node dependencies
-├── vercel.json               # Vercel configuration
-├── .env.example              # Template for env variables
-├── api/
-│   └── send-email.js        # Serverless function for handling emails
-├── images/
-├── e certificates/
+├── app/
+│   ├── api/send-email/route.js # Contact form API
+│   ├── layout.jsx              # Root layout and metadata
+│   └── page.jsx                # Portfolio page
+├── public/
+│   ├── images/
+│   └── certificates/
+├── style.css                   # Portfolio styles
+├── package.json                # Next.js scripts and dependencies
+├── next.config.mjs             # Next.js configuration
+├── vercel.json                 # Vercel configuration
 └── .git/
 ```
 
