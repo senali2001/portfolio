@@ -19,7 +19,7 @@ export const portfolioContent = `
       <canvas class="hero-atmosphere" id="heroAtmosphere" aria-hidden="true"></canvas>
       <div class="hero-copy" data-parallax="0.012">
         <p class="eyebrow"><span class="eyebrow-dot"></span> SOFTWARE ENGINEERING UNDERGRADUATE</p>
-        <h1 id="hero-title">Navodhya Senali <span class="hero-role"><span>Software Engineering Undergraduate</span><span class="hero-typed-line">Exploring <span id="typing-text" aria-label="Full-stack enthusiast, backend enthusiast, AI/ML enthusiast, research enthusiast, and project management enthusiast">Full-stack enthusiast</span><span class="typing-cursor" aria-hidden="true"></span></span></span></h1>
+        <h1 id="hero-title"><span class="hero-name">Navodhya Senali</span> <span class="hero-role"><span>Software Engineering Undergraduate</span><span class="hero-typed-line">Exploring <span id="typing-text" aria-label="Full-stack enthusiast, backend enthusiast, AI/ML enthusiast, research enthusiast, and project management enthusiast">Full-stack enthusiast</span><span class="typing-cursor" aria-hidden="true"></span></span></span></h1>
         <p class="hero-intro">Curious about technology and always learning, I explore full-stack and backend development through hands-on projects, alongside interests in AI/ML and research. I’m currently seeking a software engineering internship where I can contribute, collaborate, and keep learning.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#projects">View Projects <span aria-hidden="true">→</span></a>
@@ -102,7 +102,7 @@ export const portfolioContent = `
     <section class="content-section section-shell records-section" id="competitions" aria-labelledby="competitions-title">
       <div class="section-heading"><p class="eyebrow">COMPETITIONS</p><h2 id="competitions-title">Competition certificates</h2></div>
       <div class="record-grid competition-grid">
-        <figure class="record-card"><img src="/certificates/techmaths 1st place- team mathsqade, stem competition.jpeg" alt="TechMaths STEM competition first-place certificate" loading="lazy"><figcaption><strong>TechMath Competition</strong><span>1st place · Team MathsQade</span></figcaption></figure>
+        <figure class="record-card"><img src="/certificates/techmaths%201st%20place-%20team%20mathsqade%2C%20stem%20competition.jpeg" alt="TechMaths STEM competition first-place certificate" loading="lazy"><figcaption><strong>TechMath Competition</strong><span>1st place · Team MathsQade</span></figcaption></figure>
         <figure class="record-card"><img src="/certificates/Green xtreme - 2nd place- competion.jpeg" alt="Green Xtreme competition second-place certificate" loading="lazy"><figcaption><strong>Green Xtreme</strong><span>2nd place</span></figcaption></figure>
         <figure class="record-card"><img src="/certificates/AlgoXplore competition.png" alt="AlgoXplore competition certificate" loading="lazy"><figcaption><strong>AlgoXplore</strong><span>Competition participation</span></figcaption></figure>
         <figure class="record-card"><img src="/certificates/ideathon -competetion.png" alt="Ideathon competition certificate" loading="lazy"><figcaption><strong>Ideathon</strong><span>Competition participation</span></figcaption></figure>
